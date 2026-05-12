@@ -1,21 +1,16 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
+# =============================================================================
+#  BANNER
+# =============================================================================
 
-"""
-╔═══════════════════════════════════════════════════════════════════════════════╗
-║                         🔥 KILUA CHK PRO v3.0 🔥                              ║
-║                                                                               ║
-║                     Developed by: @o8380 · Mustafa964                        ║
-║                          Kilua Services · Premium Checker                     ║
-║                                                                               ║
-║  Features:                                                                    ║
-║    - Automatic PayPal Gateway Detection                                      ║
-║    - Real-time card validation with Luhn                                     ║
-║    - Premium animated emojis & colored buttons                               ║
-║    - Multi-threading for mass checks                                         ║
-║    - Proxy rotation & retry mechanism                                        ║
-║                                                                               ║
-╚═══════════════════════════════════════════════════════════════════════════════╝
+BANNER = f"""
+{Fore.CYAN}{Style.BRIGHT}
+╔══════════════════════════════════════════════════════════════════╗
+║                         🔥 KILUA CHK PRO 🔥                       ║
+║                     Developed by: @o8380                          ║
+║                         Mustafa964 · Kilua Services             ║
+║                              v3.0                                 ║
+╚══════════════════════════════════════════════════════════════════╝
+{Style.RESET_ALL}
 """
 
 import os
