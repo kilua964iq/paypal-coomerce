@@ -1,17 +1,5 @@
-# =============================================================================
-#  BANNER
-# =============================================================================
-
-BANNER = f"""
-{Fore.CYAN}{Style.BRIGHT}
-╔══════════════════════════════════════════════════════════════════╗
-║                         🔥 KILUA CHK PRO 🔥                       ║
-║                     Developed by: @o8380                          ║
-║                         Mustafa964 · Kilua Services             ║
-║                              v3.0                                 ║
-╚══════════════════════════════════════════════════════════════════╝
-{Style.RESET_ALL}
-"""
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
 
 import os
 import re
@@ -28,12 +16,32 @@ from concurrent.futures import ThreadPoolExecutor
 import requests
 import telebot
 from telebot.types import InputMediaVideo, InlineKeyboardMarkup, InlineKeyboardButton
-from colorama import init, Fore, Style
 
-# Disable SSL warnings
+# ==================== استيراد colorama أولاً ====================
+from colorama import init, Fore, Style
+init(autoreset=True)
+
 import urllib3
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
-init(autoreset=True)
+
+# =============================================================================
+#  BANNER (بعد استيراد colorama)
+# =============================================================================
+
+BANNER = f"""
+{Fore.CYAN}{Style.BRIGHT}
+╔══════════════════════════════════════════════════════════════════╗
+║                         🔥 KILUA CHK PRO 🔥                       ║
+║                     Developed by: @o8380                          ║
+║                         @Mustafa964 · Kilua Services             ║
+║                              v3.0                                 ║
+╚══════════════════════════════════════════════════════════════════╝
+{Style.RESET_ALL}
+"""
+
+# =============================================================================
+#  باقي الكود كما هو (بدون تغيير)
+# =============================================================================
 
 # =============================================================================
 #  CONFIGURATION
